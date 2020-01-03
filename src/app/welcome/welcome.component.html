@@ -13,7 +13,7 @@
       </g>
     </svg>
 
-    <span>{{ title }} app is running!</span>
+    <span>{{ title }}</span>
 
     <svg id="rocket-smoke" alt="Rocket Ship Smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <path id="Path_40" data-name="Path 40" d="M644.6,141S143.02,215.537,147.049,870.207s342.774,201.755,342.774,201.755S404.659,847.213,388.815,762.2c-27.116-145.51-11.551-384.124,271.9-609.1C671.15,139.365,644.6,141,644.6,141Z" transform="translate(-147.025 -140.939)" fill="#f5f5f5"/>
@@ -25,22 +25,63 @@
   <h2>Captive Portal</h2>
   <p>這是一個強制入口網站，你連上的是一個需要能辨識使用者身分才能繼續使用的網路。</p>
 
-  <div class="card-container">
-    <a class="card" target="_self" rel="noopener" href="/angular">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+  <div class="container">
+    <h1>External Captive Portal Parameters</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Continue URL</label>
+        <input type="text" class="form-control" id="name" [value]='continueUrl'>
+      </div>
 
-      <span>About Angular</span>
+      <div class="form-group">
+        <label for="loginUrl">Login URL</label>
+        <input type="text" class="form-control" id="loginUrl" required [value]='loginUrl'>
+      </div>
 
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>    </a>
+      <div class="form-group">
+        <label for="logoutUrl">Logout URL</label>
+        <input type="text" class="form-control" id="logoutUrl" [value]='logoutUrl'>
+      </div>
 
-    <a class="card" target="_self" rel="noopener" href="/login">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+      <div class="form-group">
+        <label for="apName">AP Name</label>
+        <input type="text" class="form-control" id="apName" [value]='apName'>
+      </div>
 
-      <span>Login</span>
+      <div class="form-group">
+        <label for="apTags">AP Tags</label>
+        <input type="text" class="form-control" id="apTags" [value]='apTags'>
+      </div>
 
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
+      <div class="form-group">
+        <label for="apMac">AP Tags</label>
+        <input type="text" class="form-control" id="apMac" [value]='apMac'>
+      </div>
 
+      <div class="form-group">
+        <label for="mauth">Mauth</label>
+        <input type="text" class="form-control" id="mauth" [value]='mauth'>
+      </div>
+    </form>
+    <form method="POST" [action]="loginUrl">
+      <div class="form-group">
+        <label for="mauth">Username</label>
+        <input name="username" type="text" class="form-control" id="username" [value]='username'>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input name="password" type="password" class="form-control" id="password" [value]='password'>
+      </div>
+
+      <div class="form-group">
+        <label for="mauth">Mauth</label>
+        <input name="mauth" type="text" class="form-control" id="mauth" [value]='mauth'>
+      </div>
+
+      <button type="submit" class="btn btn-success">Continue</button>
+
+    </form>
   </div>
 
   <!-- Next Steps -->

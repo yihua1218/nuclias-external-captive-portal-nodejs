@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Redirect URL
+
+https://cp.nuclias.tw/?continue_url=https:%2F%2Fwww.nuclias.com%2F&login_url=https:%2F%2Fexternal.redirect.nuclias.com%2Fexternal.ccp%3Fstate%3D64953203797416480&ap_mac=00:AD:24:36:84:80&ap_name=BCPDD-2820P&ap_tags=D-Link,Tokyo&mauth=C8:D3:A3:FA:2F:9D&logout_url=
+

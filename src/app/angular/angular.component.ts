@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AngularComponent implements OnInit {
   title = 'captive-portal';
-  
+
   constructor() { }
 
   ngOnInit() {
