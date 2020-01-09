@@ -28,5 +28,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Redirect URL
 
+```
 https://cp.nuclias.tw/?continue_url=https:%2F%2Fwww.nuclias.com%2F&login_url=https:%2F%2Fexternal.redirect.nuclias.com%2Fexternal.ccp%3Fstate%3D64953203797416480&ap_mac=00:AD:24:36:84:80&ap_name=BCPDD-2820P&ap_tags=D-Link,Tokyo&mauth=C8:D3:A3:FA:2F:9D&logout_url=
+```
 
+```
+http://purpleportal.net/access/?login_url=http://192.168.1.1/login&ap_mac=AA-BB-CC-DD-EEFF&client_mac=11-22-33-44-55-66&orig_url=http://bbc.co.uk&ssid=Betfred+WiFi
+```
