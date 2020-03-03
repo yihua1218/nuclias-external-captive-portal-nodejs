@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'gitlab', component: GitlabLoginComponent },
   { path: 'angular', component: AngularComponent },
   { path: 'info', component: InfoComponent },
-  { path: '**', component: LoginComponent },
+  { path: '**', component: WelcomeComponent },
 ];
 
 @NgModule({
