@@ -1,0 +1,30 @@
+parameters:
+  - name: Continue URL
+    field: continue_url
+    description: The URL where the user used wanna access. After login the browser will redirect to this URL.
+  - name: Login URL
+    field: login_url
+    description: The device provides the login HTTP POST endpoint for External Captive Portal to POST the user credentials.
+  - name: Logout URL
+    field: logout_url
+    description: The sign out URL on the AP is for the user to log out.
+  - name: AP Name
+    field: ap_name
+    description: The name of the Access Point.
+  - name: AP Tags
+    field: ap_tags
+    description: Tag names of the Access Point. It would be the site tags and site name of this AP under Nuclias system.
+  - name: AP MAC
+    field: ap_mac
+    description: The MAC address of the Access Point which the client associate to.
+  - name: Mauth
+    field: mauth
+    description: The authentication token for the client, usually the MAC address of the client.
+form:
+  - name: Success URL
+    field: success_url
+    description: 
+  - name: Username
+    field: username
+  - name: Password
+    field: password

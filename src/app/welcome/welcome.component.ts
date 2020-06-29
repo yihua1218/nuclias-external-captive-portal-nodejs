@@ -11,6 +11,7 @@ import { map } from 'rxjs/operators';
 export class WelcomeComponent implements OnInit {
   title = 'Welcome';
   continueUrl = '';
+  success_url = '';
   loginUrl = '';
   logoutUrl = '';
   apName = '';
@@ -31,6 +32,7 @@ export class WelcomeComponent implements OnInit {
       this.apTags = params.ap_tags || '';
       this.apMac = params.ap_mac || '';
       this.mauth = params.mauth || '';
+      this.success_url = this.continueUrl;
     });
   }
 
